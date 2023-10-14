@@ -100,6 +100,19 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
+alias v='fd --type f --hidden --exclude .git | fzf-tmux -p --reverse | xargs nvim'
+echo '
+ ███▄ ▄███▓ ▒█████  ▓█████  ██▓ ███▄    █     ██▓███   ▄▄▄       ██▀███   ██▒   █▓ ██▓▒███████▒ ██▓
+▓██▒▀█▀ ██▒▒██▒  ██▒▓█   ▀ ▓██▒ ██ ▀█   █    ▓██░  ██▒▒████▄    ▓██ ▒ ██▒▓██░   █▒▓██▒▒ ▒ ▒ ▄▀░▓██▒
+▓██    ▓██░▒██░  ██▒▒███   ▒██▒▓██  ▀█ ██▒   ▓██░ ██▓▒▒██  ▀█▄  ▓██ ░▄█ ▒ ▓██  █▒░▒██▒░ ▒ ▄▀▒░ ▒██▒
+▒██    ▒██ ▒██   ██░▒▓█  ▄ ░██░▓██▒  ▐▌██▒   ▒██▄█▓▒ ▒░██▄▄▄▄██ ▒██▀▀█▄    ▒██ █░░░██░  ▄▀▒   ░░██░
+▒██▒   ░██▒░ ████▓▒░░▒████▒░██░▒██░   ▓██░   ▒██▒ ░  ░ ▓█   ▓██▒░██▓ ▒██▒   ▒▀█░  ░██░▒███████▒░██░
+░ ▒░   ░  ░░ ▒░▒░▒░ ░░ ▒░ ░░▓  ░ ▒░   ▒ ▒    ▒▓▒░ ░  ░ ▒▒   ▓▒█░░ ▒▓ ░▒▓░   ░ ▐░  ░▓  ░▒▒ ▓░▒░▒░▓  
+░  ░      ░  ░ ▒ ▒░  ░ ░  ░ ▒ ░░ ░░   ░ ▒░   ░▒ ░       ▒   ▒▒ ░  ░▒ ░ ▒░   ░ ░░   ▒ ░░░▒ ▒ ░ ▒ ▒ ░
+░      ░   ░ ░ ░ ▒     ░    ▒ ░   ░   ░ ░    ░░         ░   ▒     ░░   ░      ░░   ▒ ░░ ░ ░ ░ ░ ▒ ░
+       ░       ░ ░     ░  ░ ░           ░                   ░  ░   ░           ░   ░    ░ ░     ░  
+       https://github.com/moeinparvizi
+             '                                                                 ░       ░            
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 source /home/sirvan/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
@@ -110,6 +123,7 @@ ___MY_VMOPTIONS_SHELL_FILE="${HOME}/.jetbrains.vmoptions.sh"; if [ -f "${___MY_V
 plugins=( 
     # other plugins...
     zsh-autosuggestions
+    you-should-use
 )
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 plugins+=(zsh-vi-mode)
